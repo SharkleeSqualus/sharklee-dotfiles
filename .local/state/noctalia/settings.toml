@@ -1,0 +1,319 @@
+config_version = 14
+
+[bar.default]
+center = [ "active_window", "audio_visualizer", "media" ]
+contact_shadow = true
+end = [
+    "lock_keys",
+    "privacy",
+    "spacer_2",
+    "volume",
+    "brightness",
+    "spacer_2",
+    "cpu",
+    "ram",
+    "temp",
+    "spacer_2",
+    "battery"
+]
+margin_ends = 0
+radius = 0
+shadow = false
+start = [ "logo", "clock", "workspaces", "tray", "wallhaven" ]
+thickness = 32
+
+[calendar]
+enabled = true
+
+    [calendar.account.personal_google]
+    name = "Sharklee"
+    type = "google"
+
+[control_center]
+sidebar = "full"
+
+    [control_center.calendar]
+    show_events_card = false
+    show_week_numbers = true
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[location]
+address = "dalat"
+
+[lockscreen]
+blur_intensity = 0.0
+tint_intensity = 0.0
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [
+    "lockscreen-login-box@winit",
+    "lockscreen-login-box@eDP-1",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000002",
+    "lockscreen-widget-0000000000000004",
+    "lockscreen-widget-0000000000000005"
+]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 906.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.0
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@winit"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 474.0
+    cy = 330.0
+    output = "winit"
+    placement_height = 512.0
+    placement_width = 948.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@winit".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 96.0
+    box_width = 256.0
+    cx = 960.0
+    cy = 108.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background_opacity = 0.0
+        format = "{:%H:%M:%S}"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 332.0
+    cy = 233.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "calendar"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+        background_opacity = 0.0
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000004]
+    box_height = 32.0
+    box_width = 432.0
+    cx = 992.0
+    cy = 1036.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = -0.0
+    type = "label"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000004.settings]
+        background_opacity = 0.0
+        background_padding = 0
+        background_radius = 0
+        description = ""
+        font_family = ""
+        opacity = 1.0
+        title = "Happy Halloween"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000005]
+    box_height = 176.0
+    box_width = 448.0
+    cx = 960.0
+    cy = 284.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000005.settings]
+        background_opacity = 0.0
+        bands = 32
+        show_when_idle = true
+
+[plugin_settings."noctalia/wallhaven"]
+download_dir = "/home/sharklee/Wallpaper/wallhaven"
+
+[plugins]
+enabled = [ "noctalia/wallhaven" ]
+
+[shell]
+corner_radius_scale = 0.0
+font_family = "Maple Mono NF"
+lang = "en"
+niri_overview_type_to_launch_enabled = true
+password_style = "random"
+
+    [shell.animation]
+    enabled = false
+    speed = 2.0000000298023224
+
+    [shell.launcher]
+    compact = true
+
+    [shell.panel]
+    control_center_placement = "floating"
+    control_center_position = "center"
+    floating_layer = "top"
+    session_placement = "floating"
+    session_position = "center"
+    wallpaper_placement = "floating"
+    wallpaper_position = "center"
+
+    [shell.screen_corners]
+    size = 1
+
+    [shell.screenshot]
+    directory = "/home/sharklee/Pictures/Screenshots"
+
+    [shell.shadow]
+    alpha = 0.34999999217689037
+    direction = "down_right"
+
+[theme]
+builtin = "Nord"
+community_palette = "Osaka jade"
+mode = "dark"
+shell_mode = "dark"
+source = "builtin"
+wallpaper_scheme = "m3-content"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "cava", "hyprland", "kitty", "niri", "umbriel" ]
+    community_ids = [ "rofi", "fastfetch" ]
+
+[wallpaper]
+directory = "/home/sharklee/Wallpaper"
+transition_on_startup = true
+
+    [wallpaper.default]
+    path = "/home/sharklee/Wallpaper/Look good images/11356529-2195591391.jpg"
+
+    [wallpaper.last]
+    path = "/home/sharklee/Wallpaper/Look good images/11356529-2195591391.jpg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/sharklee/Wallpaper/Look good images/11356529-2195591391.jpg"
+
+[widget.active_window]
+icon_size = 20
+min_length = 0
+title_scroll = "always"
+
+[widget.audio_visualizer]
+color_2 = "on_primary"
+width = 60
+
+[widget.clock]
+format = "%Y-%m-%d-%a %H:%M:%S"
+
+[widget.cpu]
+glyph = "cpu"
+show_label = false
+
+[widget.lock_keys]
+hide_when_off = true
+show_scroll_lock = true
+
+[widget.logo]
+color = "primary"
+glyph = ""
+icon_color = "primary"
+interactive = false
+label = "󰣇"
+type = "custom_button"
+
+[widget.media]
+art_size = 20
+hide_when_no_media = true
+max_length = 260
+min_length = 0
+title_scroll = "always"
+
+[widget.privacy]
+hide_inactive = true
+
+[widget.ram]
+glyph = "keyframes"
+
+[widget.spacer_2]
+length = 15
+type = "spacer"
+
+[widget.taskbar]
+show_active_indicator = false
+
+[widget.wallhaven]
+color = "primary"
+enable_scroll = false
+glyph = "circle"
+icon_color = "primary"
+scale = 0.5
+type = "noctalia/wallhaven:wallhaven"
+
+[widget.weather]
+enabled = false
+
+[widget.workspaces]
+empty_color = "outline"
+occupied_color = "on_surface"
+style = "minimal"

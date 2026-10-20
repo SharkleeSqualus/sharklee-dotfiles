@@ -1,0 +1,11 @@
+{
+  "scopes": {
+    "global": {
+      "/home/sharklee/Wallpaper": [
+        "/home/sharklee/Wallpaper/EOS wallpapers/EndeavourOS-Cassini.png",
+        "/home/sharklee/Wallpaper/Catppuccin wallpapers/Cat.png"
+      ]
+    }
+  },
+  "version": 2
+}
