@@ -282,7 +282,3 @@ require("~/.config/hypr/cursor.lua")
 
 -- For Noctalia Color templates
 require("noctalia").apply_theme()
-
--- DMS Include Configs
-require("dms.binds")
-require("dms.binds-user")
