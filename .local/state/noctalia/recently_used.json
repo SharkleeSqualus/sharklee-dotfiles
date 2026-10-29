@@ -1,24 +1,27 @@
 {
   "Applications": [
-    "/usr/share/applications/nemo.desktop",
-    "/usr/share/applications/zen.desktop",
-    "/usr/share/applications/md.obsidian.Obsidian.desktop",
-    "/usr/share/applications/helium.desktop",
-    "/usr/share/applications/audacity.desktop",
-    "/home/sharklee/.local/share/applications/Goose Goose Duck.desktop",
-    "/usr/share/applications/proton.vpn.app.gtk.desktop",
-    "/usr/share/applications/com.github.xournalpp.xournalpp.desktop",
     "/usr/share/applications/org.kde.dolphin.desktop",
-    "/usr/share/applications/emacsclient.desktop",
-    "/usr/share/applications/megasync.desktop",
-    "/usr/share/applications/vivaldi-stable.desktop",
-    "/usr/share/applications/org.kde.kdeconnect.app.desktop",
+    "/usr/share/applications/zen.desktop",
+    "/usr/share/applications/nwg-look.desktop",
+    "/usr/share/applications/nemo.desktop",
+    "/usr/share/applications/thunar.desktop",
     "/usr/share/applications/steam.desktop",
-    "/usr/share/applications/io.github.elyprismlauncher.ElyPrismLauncher.desktop",
+    "/usr/share/applications/proton.vpn.app.gtk.desktop",
+    "/usr/share/applications/io.github.wheat32.ProtonVPNQt.desktop",
+    "/home/sharklee/.local/share/applications/Chicken Invaders Universe.desktop",
     "/usr/share/applications/fcitx5-configtool.desktop",
-    "/usr/share/applications/xppentablet.desktop",
-    "/usr/share/applications/org.kde.krita.desktop",
-    "/usr/share/applications/localsend.desktop",
-    "/usr/share/applications/obsidian.desktop"
+    "/usr/share/applications/io.github.elyprismlauncher.ElyPrismLauncher.desktop",
+    "/usr/share/applications/megasync.desktop",
+    "/usr/share/applications/obsidian.desktop",
+    "/usr/share/applications/dev.lizardbyte.app.Sunshine.desktop",
+    "/usr/share/applications/brave-origin.desktop",
+    "/usr/share/applications/discord.desktop",
+    "/usr/share/applications/blender.desktop",
+    "/usr/share/applications/yazi.desktop",
+    "/usr/share/applications/dev.noctalia.Noctalia.desktop",
+    "/usr/share/applications/org.kde.krita.desktop"
+  ],
+  "Emoji": [
+    "emoji-😅"
   ]
 }

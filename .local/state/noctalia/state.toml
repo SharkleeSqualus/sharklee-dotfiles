@@ -3,3 +3,7 @@ calendar_credentials_v1 = true
 
 [theme_templates]
 applied_builtin_ids = "btop cava hyprland kitty niri umbriel"
+applied_community_ids = "fastfetch rofi"
+
+[wallpaper_panel]
+flatten = false

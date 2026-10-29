@@ -7,34 +7,33 @@ local ipc = "noctalia msg "
 
 hl.bind(mainMod .. "+ space", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher")) --launcher
 hl.bind(mainMod .. "+ B", hl.dsp.exec_cmd("noctalia msg bar-toggle")) --hide/show bar
-hl.bind(mainMod .. "+ bracketright", hl.dsp.exec_cmd("noctalia msg panel-toggle session")) --open session menu
+hl.bind(mainMod .. "+ T", hl.dsp.exec_cmd("noctalia msg panel-toggle session")) --open session menu
 hl.bind(mainMod .. "+ N", hl.dsp.exec_cmd("noctalia msg panel-toggle clipboard")) --open clibpoard
 --hl.bind(mainMod .. "+ period", hl.dsp.exec_cmd("noctalia msg panel-toggle control-center notifications")) --open notifications
-hl.bind(mainMod .. "+ bracketleft", hl.dsp.exec_cmd("noctalia msg panel-toggle control-center ")) --open control-center
-hl.bind(mainMod .. "+ semicolon", hl.dsp.exec_cmd("noctalia msg panel-toggle wallpaper")) --wallpaper browser
-hl.bind(mainMod .. "+ apostrophe", hl.dsp.exec_cmd("noctalia msg media toggle"))
-hl.bind(mainMod .. "+Up", hl.dsp.exec_cmd(ipc .. "volume-up 5"))
-hl.bind(mainMod .. "+Down", hl.dsp.exec_cmd(ipc .. "volume-down 5"))
-hl.bind(mainMod .. "+Right", hl.dsp.exec_cmd(ipc .. "brightness-up 5"))
-hl.bind(mainMod .. "+Left", hl.dsp.exec_cmd(ipc .. "brightness-down 5"))
+hl.bind(mainMod .. "+ Y", hl.dsp.exec_cmd("noctalia msg panel-toggle control-center ")) --open control-center
+hl.bind(mainMod .. "+ W", hl.dsp.exec_cmd("noctalia msg panel-toggle wallpaper")) --wallpaper browser
+hl.bind(mainMod .. "+ A", hl.dsp.exec_cmd("noctalia msg media toggle"))
+hl.bind(mainMod .. "+ E", hl.dsp.exec_cmd(ipc .. "volume-up 5"), { repeating = true })
+hl.bind(mainMod .. "+ D", hl.dsp.exec_cmd(ipc .. "volume-down 5"), { repeating = true })
+hl.bind(mainMod .. "+ F", hl.dsp.exec_cmd(ipc .. "brightness-up 5"), { repeating = true })
+hl.bind(mainMod .. "+ S", hl.dsp.exec_cmd(ipc .. "brightness-down 5"), { repeating = true })
 hl.bind(mainMod .. "+ P", hl.dsp.exec_cmd("noctalia msg screenshot-region"))
---Fullscreen mode
-hl.bind(mainMod .. "+ comma", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
---Wmenu-run
+hl.bind(mainMod .. "+ SHIFT + P", hl.dsp.exec_cmd("noctalia msg screenshot-screen"))
+--Fullscreen mode, since I have enable smart gap,
 hl.bind(mainMod .. "+ U", hl.dsp.exec_cmd("rofi -show run"))
 -- closeWindowBind:set_enabled(false)
 hl.bind(mainMod .. "+ Return", hl.dsp.exec_cmd("kitty")) --open terminal
-hl.bind(mainMod .. "+ period", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. "+ M", hl.dsp.window.float({ action = "toggle" }))
 --hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. "+ R", hl.dsp.layout("togglesplit")) -- dwindle only
-hl.bind(mainMod .. "+ slash", hl.dsp.window.close())
+hl.bind(mainMod .. "+ C", hl.dsp.window.close())
 -- Move focus with mainMod + vim-key
 hl.bind(mainMod .. " + h", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + k", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + j", hl.dsp.focus({ direction = "down" }))
 -- Move focus around the active workspace with Super Shift and vim direction
-hl.bind(mainMod .. "+ F", hl.dsp.window.fullscreen({ mode = "maximized", action = "set" }))
+--hl.bind(mainMod .. "+ R", hl.dsp.window.fullscreen({ mode = "maximized", action = "set" }))
 hl.bind(mainMod .. "+ SHIFT + H", hl.dsp.window.move({ direction = "l" }))
 hl.bind(mainMod .. "+ SHIFT + J", hl.dsp.window.move({ direction = "d" }))
 hl.bind(mainMod .. "+ SHIFT + K", hl.dsp.window.move({ direction = "u" }))
@@ -52,11 +51,11 @@ for i = 1, 10 do
 	hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
 -- Group window
-hl.bind("SUPER + G", hl.dsp.group.toggle())
+--hl.bind("SUPER + G", hl.dsp.group.toggle())
 --hl.bind("SUPER", "Tab", hl.dsp.group.change_active())
---hl.bind("SUPER", "TAB", hl.dsp.overview.toggle())
+--hl.bind("SUPER", "TAB", hl.dsp.overview.toggle()
 -- Example special workspace (scratchpad)
-hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("magic"))
+--hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- Scroll through existing workspaces with mainMod + scroll
